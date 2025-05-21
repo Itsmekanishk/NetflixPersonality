@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Personality Detector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="start-screen" class="screen active">
+            <h1>Netflix Personality Detector</h1>
+            <p>Discover which Netflix character matches your personality!</p>
+            <button id="start-btn" class="btn">Start Quiz</button>
+        </div>
+
+        <div id="quiz-screen" class="screen">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <div id="question-container">
+                <h2 id="question-text"></h2>
+                <div id="options-container"></div>
+            </div>
+        </div>
+
+        <div id="result-screen" class="screen">
+            <h2>Your Netflix Personality Match!</h2>
+            <div class="result-content">
+                <div class="character-image">
+                    <img id="result-image" src="" alt="Character Match">
+                </div>
+                <div class="personality-stats">
+                    <h3 id="result-title"></h3>
+                    <p id="result-description"></p>
+                    <div id="personality-percentages"></div>
+                </div>
+            </div>
+            <p id="final-message"></p>
+            <button id="restart-btn" class="btn">Take Quiz Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
